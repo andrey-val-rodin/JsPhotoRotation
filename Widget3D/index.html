@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="progress-bar.css">
+    <script type="text/javascript" src="widget3D.js"></script>
+    <style  type="text/css">
+        .rotation {
+            touch-action: pinch-zoom;
+            canvas {
+                cursor: grab;
+                user-select: none;
+            }
+        }
+    </style>
+</head>
+<title>Rotation 360°</title>
+<body>
+    <div class="rotation" id="comp" align="center" title="Нажмите на объект и начните вращать">
+        <div class="container" align="center" style="border: 1px solid lightgray">
+            <div class="circular-progress">
+                <span class="progress-value">0%</span>
+            </div>
+        </div>
+
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.001.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.002.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.003.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.004.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.005.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.006.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.007.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.008.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.009.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.010.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.011.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.012.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.013.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.014.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.015.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.016.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.017.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.018.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.019.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.020.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.021.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.022.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.023.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.024.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.025.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.026.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.027.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.028.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.029.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.030.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.031.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.032.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.033.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.034.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.035.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.036.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.037.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.038.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.039.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.040.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.041.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.042.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.043.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.044.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.045.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.046.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.047.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.048.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.049.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.050.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.051.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.052.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.053.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.054.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.055.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.056.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.057.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.058.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.059.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.060.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.061.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.062.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.063.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.064.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.065.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.066.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.067.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.068.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.069.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.070.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.071.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.072.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.073.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.074.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.075.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.076.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.077.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.078.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.079.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.080.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.081.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.082.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.083.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.084.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.085.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.086.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.087.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.088.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.089.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.090.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.091.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.092.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.093.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.094.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.095.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.096.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.097.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.098.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.099.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.100.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.101.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.102.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.103.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.104.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.105.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.106.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.107.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.108.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.109.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.110.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.111.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.112.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.113.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.114.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.115.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.116.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.117.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.118.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.119.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.120.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.121.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.122.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.123.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.124.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.125.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.126.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.127.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.128.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.129.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.130.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.131.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.132.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.133.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.134.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.135.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.136.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.137.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.138.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.139.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.140.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.141.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.142.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.143.webp" style="display: none;">
+        <img src="https://table-360.ru/wp-content/uploads/2025/02/комп.144.webp" style="display: none;">
+        <canvas width="400" height="400"></canvas>
+        <script>Rotater3D.initialize('comp')</script>
+    </div>
+    <p align="center">This is an examle of 3D-rotation</p>
+</body>
+</html>
